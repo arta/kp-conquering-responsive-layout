@@ -1,22 +1,30 @@
-* { box-sizing: border-box; }
+* {
+    /* border: 1px dotted hotpink; */
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: sans-serif;
 }
 
-.container {
+h2,
+p,
+.intro-content { max-width: 750px; }
+
+h2,
+body > p,
+.intro-content {
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
-    max-width: 750px;
-    margin: 0 auto;
 }
 
-.hero {
+h1,
+.intro-content p { width: 50%; }
+
+.container {
     background: #23424A;
     color: white;
     padding: 50px 0;
-}
-
-.intro-content {
-    width: 50%;
 }
