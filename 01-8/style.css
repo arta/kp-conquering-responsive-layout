@@ -1,6 +1,51 @@
-• { border: 1px dotted hotpink; }
+* {
+    /* border: 1px dotted hotpink; */
+    box-sizing: border-box;
+}
 
 body {
     font-family: sans-serif;
     margin: 0;
 }
+
+h1,
+p  { margin-top: 0; }
+
+h1 {
+    color: white;
+    line-height: 1.2;
+}
+
+p {
+    font-size: .875rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.a-btn {
+    background: #3ACED9;
+    border-radius: 20px;
+    color: #333;
+    display: inline-block;
+    font-size: .825rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 2em;
+    padding: 1em 2em .9em; /* otherwise not aligned, dunno why */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+    width: 90%;
+}
+
+.hero {
+    background: #203F49;
+    color: #ddd;
+    padding: 6em 0;
+}
+
+.hero-intro { width: 65%; }
