@@ -49,3 +49,89 @@ p {
 }
 
 .hero-intro { width: 65%; }
+
+/* ############################################################################
+
+Font- and Deco-Fun
+
+Toggle the standalone `/*` below to toggle Challenge #3 result.
+
+Lifted, adapted from: https://codepen.io/Apira/pen/KKdzbrr?editors=1100
+
+############################################################################ */
+
+/* /* */
+
+h1 {
+    color: #f1ebe5;
+    font-family: "Paytone One";
+    font-size: 2.8rem;
+    letter-spacing: -4px;
+    line-height: 2.8rem;
+    text-shadow: 0 5px 7px #c4b59d, 0 -2px 1px #fff;
+    text-transform: uppercase;
+}
+
+p {
+    border-left: 7px solid orange;
+    color: #525250;
+    padding-left: 1rem;
+}
+
+.span-code {
+    background: oldlace;
+    border: 1px solid crimson;
+    color: crimson;
+    font-family: serif;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.a-btn {
+    background: #9D9891;
+    box-shadow: 0 3px 5px #c4b59d, 0 -1px 1px #F8F6F2;
+    color: #F8F6F2;
+    transition: background .2s linear;
+}
+
+.a-btn:hover { background: orange; }
+
+.hero { background: #ece5da; }
+
+.hero-intro { width: 90%; }
+
+@media (min-width: 680px) {
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .hero-intro { width: 65%; }
+
+}
+
+@media (min-width: 1160px) {
+
+    .span-exclamation {
+        color: orange;
+        display: block;
+        font-family: "Paytone One";
+        text-shadow: 0 5px 7px #c4b59d, 0 -2px 1px #fff;
+        font-size: 12rem;
+
+        position: absolute;
+        top: 4.8rem;
+        margin-left: -8rem;
+
+        transform: rotate(-17deg);
+        transition: all .3s linear;
+    }
+
+    /* So far the only legit reason to use compound selector I've seen */
+    .a-btn:hover .span-exclamation {
+        transform: rotate(-0deg);
+        transition: transform .2s linear;
+    }
+
+}
