@@ -22,6 +22,15 @@ p {
     line-height: 1.6;
 }
 
+.span-exclamation {
+    color: #ece5da;
+    position: absolute;
+    top: 5rem;
+    margin-left: 8;
+    transition: all .3s linear;
+    visibility: hidden;
+}
+
 .a-btn {
     background: #3ACED9;
     border-radius: 20px;
@@ -53,6 +62,8 @@ p {
 /* ############################################################################
 
 Font- and Deco-Fun
+
+.span-exclamation above is part of the set up
 
 Toggle the standalone `/*` below to toggle Challenge #3 result.
 
@@ -117,18 +128,13 @@ p {
         color: orange;
         display: block;
         font-family: "Paytone One";
-        text-shadow: 0 5px 7px #c4b59d, 0 -2px 1px #fff;
         font-size: 12rem;
-
-        position: absolute;
-        top: 4.8rem;
         margin-left: -8rem;
-
+        text-shadow: 0 5px 7px #c4b59d, 0 -2px 1px #fff;
         transform: rotate(-17deg);
-        transition: all .3s linear;
+        visibility: visible;
     }
 
-    /* So far the only legit reason to use compound selector I've seen */
     .a-btn:hover .span-exclamation {
         transform: rotate(-0deg);
         transition: transform .2s linear;
