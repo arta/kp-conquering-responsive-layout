@@ -109,6 +109,30 @@ p {
 
 .a-btn:hover { background: orange; }
 
+.a-btn::after {
+    border-radius: 50rem;
+    color: transparent;
+    content: "Let's go!";
+    font-family: "Paytone One";
+    font-size: 4rem;
+    position: absolute;
+    margin-left: -7rem;
+    margin-top: -12rem;
+    transform: scale(2.5) rotate(5deg);
+    transition: all .15s linear;
+}
+
+.a-btn:hover::after {
+    background: floralwhite;
+    border: 9px solid deeppink;
+    box-shadow: 0 5px 7px #c4b59d, inset 0 1px 2px #c4b59d;
+    color: deeppink;
+    padding: 0 0.5em;
+    text-shadow: 0 2px 4px #c4b59d, 0 -2px 1px #fff;
+    transform: scale(1) rotate(-10deg);
+    transition-delay: .9s;
+}
+
 .hero { background: #ece5da; }
 
 .hero-intro { width: 90%; }
