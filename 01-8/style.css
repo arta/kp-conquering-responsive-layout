@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     /* border: 1px dotted hotpink; */
     box-sizing: border-box;
 }
@@ -123,6 +125,16 @@ p {
 }
 
 @media (min-width: 1160px) {
+
+    .container::before {
+        content: 'x';
+        color: transparent;
+        font-size: 19rem;
+        margin-left: -9rem;
+        margin-top: -2rem;
+        position: absolute;
+        z-index: 999;
+    }
 
     .span-exclamation {
         color: orange;
