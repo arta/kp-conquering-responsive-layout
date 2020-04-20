@@ -73,12 +73,12 @@ section { padding: 100px 0; }
 }
 
 /* .col is a flex item if inside a .row */
-.col { /* width: 100%; */ }
+.col { text-align: center; }
 
 .hero {
     color: #FFF;
     background-color: #23424A;
-    padding: 100px 0;
+    padding: 160px 0;
 }
 
 .hero-content { width: 60%; }
