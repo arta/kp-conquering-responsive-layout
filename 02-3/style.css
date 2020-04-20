@@ -25,7 +25,7 @@
 /* ###### */
 
 *, *::before, *::after {
-    border: 1px dotted hotpink;
+    /* border: 1px dotted hotpink; */
     box-sizing: border-box;
 }
 
@@ -75,6 +75,8 @@ h2 { font-size: 2.25rem; }
 
 footer,
 section { padding: 100px 0; }
+
+.col + .col { margin-left: .5em; }
 
 footer {
     background-color: #136C72;
