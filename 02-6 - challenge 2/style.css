@@ -1,91 +1,86 @@
-/* 
+/*
 ////// For this challenge ///////
 
 - All text is in the text.md file
 
 // Requirements
 1. Refer to the design specs for the
-   overall layout 
+   overall layout
 2. The image should line up with
    the sidebar in the section
    below
 
 */
 
+/* ###### */
+/* GLOBAL */
+/* ###### */
+
 *, *::before, *::after {
-    box-sizing: border-box;
+  /* border: 1px dotted hotpink; */
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
 }
 
-img {
-    max-width: 100%;
+
+/* ########## */
+/* TYPOGRAPHY */
+/* ########## */
+
+h1,
+h2 { font-weight: 900; }
+
+h1 { font-size: 3rem; }
+
+h2 { font-size: 2.25rem; }
+
+.hero-p {
+  font-size: 1.3125rem;
+  margin-bottom: 3em;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-top: 0;
+.a-btn {
+  background-color: #38CFD9;
+  border-radius: 100px;
+  color: #23424A;
+  display: inline-block;
+  font-weight: 900;
+  padding: .75em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+.a-btn:focus,
+.a-btn:hover { opacity: .75; }
+
+
+/* ###### */
+/* LAYOUT */
+/* ###### */
+
+.col + .col { margin-left: 30px; }
 
 .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
 }
 
-.row {
-    /* display: flex => flex container */
-    display: flex;
-    justify-content: space-between;
-    
-    /* can't use yet */
-    /* gap: 100px; */
-}
-
-.col {
-    /* these are now flex items */
-    width: 100%;
-}
-
-.col + .col {
-    margin-left: 30px;
-}
+/* .col is a flex item if inside a .row */
+.col { width: 100%; }
 
 .hero {
-    padding: 100px 0;
-    background-color: #23424A;
-    color: #FFF;
+  background-color: #23424A;
+  color: #FFF;
+  padding: 100px 0;
 }
 
-.hero__text { 
-    width: 62%;
-}
+.hero-content { width: 62%; }
 
-.hero__img {
-    width: 32%;
-    align-self: flex-start;
-}
-
-.hero p {
-    margin-bottom: 3em;
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
-    font-weight: 900;
-    background-color: #38CFD9;
-    padding: .75em 2em;
-    border-radius: 100px;
-}
-
-.btn:hover,
-.btn:focus {
-    opacity: .75; 
-}
+/* display: flex => flex container */
+.row { display: flex; }
