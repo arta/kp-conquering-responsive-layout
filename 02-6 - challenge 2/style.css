@@ -16,6 +16,10 @@
 /* GLOBAL */
 /* ###### */
 
+:root {
+  --clr-accent: #136C72;
+}
+
 *, *::before, *::after {
   border: 1px dotted hotpink;
   box-sizing: border-box;
@@ -44,6 +48,8 @@ h1 { font-size: 3rem; }
 
 h2 { font-size: 2.25rem; }
 
+.article-h2 { color: var(--clr-accent); }
+
 .hero-p {
   font-size: 1.3125rem;
   margin-bottom: 3em;
@@ -67,6 +73,11 @@ h2 { font-size: 2.25rem; }
 /* ###### */
 /* LAYOUT */
 /* ###### */
+
+aside {
+  color: white;
+  background-color: var(--clr-accent);
+}
 
 .col + .col { margin-left: 30px; }
 
