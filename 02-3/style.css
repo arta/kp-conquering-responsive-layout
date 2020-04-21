@@ -90,7 +90,10 @@ footer {
 }
 
 /* .col is a flex item if inside a .row */
-.col { text-align: center; }
+.col {
+    flex-basis: 100%;
+    text-align: center;
+}
 
 .hero {
     background-color: #23424A;
