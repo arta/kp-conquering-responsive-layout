@@ -17,7 +17,7 @@
 /* ###### */
 
 *, *::before, *::after {
-  /* border: 1px dotted hotpink; */
+  border: 1px dotted hotpink;
   box-sizing: border-box;
 }
 
