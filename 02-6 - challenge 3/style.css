@@ -82,7 +82,7 @@ h2 { font-size: 2.25rem; }
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .header-nav-li + .header-nav-li { margin-left: .375em; }
@@ -106,7 +106,7 @@ h2 { font-size: 2.25rem; }
   cursor: unset;
 }
 
-.header-nav { background: var(--clr-accent); }
+header { background: var(--clr-accent); }
 
 
 /* ###### */
