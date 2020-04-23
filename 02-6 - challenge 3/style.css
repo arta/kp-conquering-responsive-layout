@@ -83,6 +83,7 @@ h2 { font-size: 2.25rem; }
 .header-nav-ul {
   display: flex;
   list-style: none;
+  justify-content: flex-end;
   margin: 0;
   padding: 1em 0;
 }
