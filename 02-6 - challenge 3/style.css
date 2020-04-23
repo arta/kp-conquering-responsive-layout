@@ -74,6 +74,41 @@ h2 { font-size: 2.25rem; }
 .a-btn:hover { opacity: .75; }
 
 
+/* ########## */
+/* NAVIGATION */
+/* ########## */
+
+.header-nav-ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.header-nav-li + .header-nav-li { margin-left: .375em; }
+
+.a-header-nav {
+  border: 2px solid transparent;
+  border-radius: 7em;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: .375em 1.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.a-header-nav:hover { border-color: #fff; }
+
+.current {
+  background: #fff;
+  color: var(--clr-accent);
+  cursor: unset;
+}
+
+.header-nav { background: var(--clr-accent); }
+
+
 /* ###### */
 /* LAYOUT */
 /* ###### */
