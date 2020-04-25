@@ -21,7 +21,7 @@
 }
 
 *, *::before, *::after {
-  /* border: 1px dotted hotpink; */
+  border: 1px solid hotpink;
   box-sizing: border-box;
 }
 
@@ -83,7 +83,6 @@ h2 { font-size: 2.25rem; }
 .header-nav-ul {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
   margin: 0;
   padding: 1em 0;
 }
@@ -108,6 +107,11 @@ h2 { font-size: 2.25rem; }
 }
 
 header { background: var(--clr-accent); }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* ###### */
@@ -158,10 +162,3 @@ section { padding: 100px 0; }
 /* ###### */
 
 .hero-img { object-fit: cover; }
-
-
-/* ##### */
-/* UTILS */
-/* ##### */
-
-.push-left { margin-right: auto; }
