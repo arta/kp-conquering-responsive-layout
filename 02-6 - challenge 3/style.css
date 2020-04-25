@@ -73,6 +73,15 @@ h2 { font-size: 2.25rem; }
 .a-btn:focus,
 .a-btn:hover { opacity: .75; }
 
+.a-logo {
+  align-self: center;
+  color: white;
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin-right: .6em;
+  text-decoration: none;
+}
+
 
 /* ########## */
 /* NAVIGATION */
@@ -110,6 +119,7 @@ header { background: var(--clr-accent); }
 
 .header-nav {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
 }
 
