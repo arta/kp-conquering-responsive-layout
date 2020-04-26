@@ -3,6 +3,10 @@
 /* ------ */
 
 :root {
+  --clr-caramel: #824936;
+  --clr-choco: #222C2A;
+  --clr-cream: #F3EED9;
+
   --fnt-playfair: 'Playfair Display', serif;
   --fnt-roboto:   'Roboto', sans-serif;
 }
