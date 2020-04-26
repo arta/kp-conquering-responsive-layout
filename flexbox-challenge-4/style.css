@@ -14,7 +14,7 @@
 *,
 *::after,
 *::before {
-  border: 1px dotted hotpink;
+  /* border: 1px dotted hotpink; */
   box-sizing: border-box;
 }
 
@@ -38,7 +38,33 @@ h1,
 h2,
 p { margin-top: 0; }
 
+h1,
+h2 { font-family: var(--fnt-playfair); }
+
+h1,
 .h2-top { text-align: center; }
+
+h1 {
+  font-size: 3.75rem;
+  max-width: 12em;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.2em;
+}
+
+p { line-height: 1.5; }
+
+small {
+  font-weight: lighter;
+  font-size: 1.125rem;
+  letter-spacing: 3px;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+}
+
+.p-top { font-size: 1.3125rem; }
 
 
 /* ###### */
