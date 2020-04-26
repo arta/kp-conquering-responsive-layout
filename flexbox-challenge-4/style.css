@@ -28,3 +28,14 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
+  width: 90%;
+}
