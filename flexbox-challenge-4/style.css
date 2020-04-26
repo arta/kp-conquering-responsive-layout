@@ -30,9 +30,20 @@ img {
 }
 
 
+/* ########## */
+/* TYPOGRAPHY */
+/* ---------- */
+
+h1,
+h2,
+p { margin-top: 0; }
+
+
 /* ###### */
 /* LAYOUT */
 /* ------ */
+
+.article-section { padding: 3em 0; }
 
 .container {
   margin: 0 auto;
