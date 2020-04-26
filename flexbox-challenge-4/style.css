@@ -80,8 +80,8 @@ section { padding: 6em 0; }
 .article-col +
 .article-col { margin-left: 3em; }
 
-.section-bottom,
-.section-middle { color: whitesmoke; }
+.article-section-bottom,
+.article-section-middle { color: whitesmoke; }
 
 .article-col { flex-basis: 100%; }
 
@@ -107,14 +107,14 @@ section { padding: 6em 0; }
 
 .flextrack { display: flex; }
 
-.section-bottom { background: var(--clr-caramel); }
+.article-section-bottom { background: var(--clr-caramel); }
 
 .section-hero {
   background: var(--clr-cream);
   padding: 0;
 }
 
-.section-middle { background: var(--clr-choco); }
+.article-section-middle { background: var(--clr-choco); }
 
 
 /* ###### */
