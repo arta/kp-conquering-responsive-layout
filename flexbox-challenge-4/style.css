@@ -42,7 +42,10 @@ h1,
 h2 { font-family: var(--fnt-playfair); }
 
 h1,
-.h2-top { text-align: center; }
+.h2-top {
+  color: var(--clr-caramel);
+  text-align: center;
+}
 
 h1 {
   font-size: 3.75rem;
@@ -71,8 +74,13 @@ small {
 /* LAYOUT */
 /* ------ */
 
+section { padding: 3em 0; }
+
 .article-col +
 .article-col { margin-left: 2em; }
+
+.section-bottom,
+.section-middle { color: whitesmoke; }
 
 .article-col { flex-basis: 100%; }
 
@@ -81,8 +89,6 @@ small {
   margin-right: 2em;
   order: -1;
 }
-
-.article-section { padding: 3em 0; }
 
 .container {
   margin: 0 auto;
@@ -99,3 +105,12 @@ small {
 }
 
 .flextrack { display: flex; }
+
+.section-bottom { background: var(--clr-caramel); }
+
+.section-hero {
+  background: var(--clr-cream);
+  padding: 0;
+}
+
+.section-middle { background: var(--clr-choco); }
