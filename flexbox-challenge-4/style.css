@@ -115,3 +115,10 @@ section { padding: 6em 0; }
 }
 
 .section-middle { background: var(--clr-choco); }
+
+
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+img { object-fit: cover; }
