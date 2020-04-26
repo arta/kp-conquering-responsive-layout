@@ -57,7 +57,10 @@ h2 {
   margin-bottom: 1.2em;
 }
 
-p { line-height: 1.5; }
+p {
+  font-size: 1.3125rem;
+  line-height: 1.5;
+}
 
 small {
   font-weight: lighter;
@@ -67,17 +70,15 @@ small {
   text-transform: uppercase;
 }
 
-.p-top { font-size: 1.3125rem; }
-
 
 /* ###### */
 /* LAYOUT */
 /* ------ */
 
-section { padding: 3em 0; }
+section { padding: 6em 0; }
 
 .article-col +
-.article-col { margin-left: 2em; }
+.article-col { margin-left: 3em; }
 
 .section-bottom,
 .section-middle { color: whitesmoke; }
@@ -86,7 +87,7 @@ section { padding: 3em 0; }
 
 .article-col.place-first {
   margin-left: 0;
-  margin-right: 2em;
+  margin-right: 3em;
   order: -1;
 }
 
