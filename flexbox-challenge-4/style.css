@@ -39,3 +39,11 @@ img {
   max-width: 1128px;
   width: 90%;
 }
+
+.container--hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 660px;
+}
