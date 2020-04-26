@@ -38,6 +38,8 @@ h1,
 h2,
 p { margin-top: 0; }
 
+.h2-top { text-align: center; }
+
 
 /* ###### */
 /* LAYOUT */
@@ -47,6 +49,12 @@ p { margin-top: 0; }
 .article-col { margin-left: 2em; }
 
 .article-col { flex-basis: 100%; }
+
+.article-col.place-first {
+  margin-left: 0;
+  margin-right: 2em;
+  order: -1;
+}
 
 .article-section { padding: 3em 0; }
 
