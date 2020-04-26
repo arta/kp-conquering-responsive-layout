@@ -43,6 +43,11 @@ p { margin-top: 0; }
 /* LAYOUT */
 /* ------ */
 
+.article-col +
+.article-col { margin-left: 2em; }
+
+.article-col { flex-basis: 100%; }
+
 .article-section { padding: 3em 0; }
 
 .container {
@@ -58,3 +63,5 @@ p { margin-top: 0; }
   justify-content: center;
   min-height: 660px;
 }
+
+.flextrack { display: flex; }
