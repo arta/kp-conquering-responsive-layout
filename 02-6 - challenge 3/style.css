@@ -206,6 +206,8 @@ section { padding: 100px 0; }
 
   .a-logo { margin: .5em; }
 
+  .container { width: 93%; }
+
   .header-nav-ul:last-child { margin: 0 auto; }
 
   .row--logo-nav { flex-direction: column; }
