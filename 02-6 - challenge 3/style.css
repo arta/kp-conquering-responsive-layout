@@ -192,8 +192,7 @@ section { padding: 100px 0; }
 
   .header-nav,
   .row--article,
-  .row--hero,
-  .row--logo-nav { flex-direction: column; }
+  .row--hero { flex-direction: column; }
 
   .row--hero {
     align-items: center;
