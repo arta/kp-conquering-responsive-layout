@@ -109,7 +109,7 @@ section { padding: 6em 0; }
 
 .article-section-bottom { background: var(--clr-caramel); }
 
-.main-section-hero {
+.article-section-hero {
   background: var(--clr-cream);
   padding: 0;
 }
