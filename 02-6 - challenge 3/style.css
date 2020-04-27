@@ -168,6 +168,21 @@ section { padding: 100px 0; }
   justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+
+  .hero-content,
+  .hero-img { width: unset; }
+
+  .hero-content { margin-bottom: 2em; }
+
+  .row-hero {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
 
 /* ###### */
 /* IMAGES */
