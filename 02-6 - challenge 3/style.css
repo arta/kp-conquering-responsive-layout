@@ -12,9 +12,10 @@
 
 */
 
+
 /* ###### */
 /* GLOBAL */
-/* ###### */
+/* ------ */
 
 :root {
   --clr-accent: #136C72;
@@ -33,9 +34,10 @@ body {
 
 img { max-width: 100%; }
 
+
 /* ########## */
 /* TYPOGRAPHY */
-/* ########## */
+/* ---------- */
 
 h1,
 h2,
@@ -84,7 +86,7 @@ h2 { font-size: 2.25rem; }
 
 /* ########## */
 /* NAVIGATION */
-/* ########## */
+/* ---------- */
 
 .header-nav-li + .header-nav-li { margin-left: .375em; }
 
@@ -126,7 +128,7 @@ header { background: var(--clr-accent); }
 
 /* ###### */
 /* LAYOUT */
-/* ###### */
+/* ------ */
 
 article,
 .hero-content { width: 62%; }
@@ -169,6 +171,6 @@ section { padding: 100px 0; }
 
 /* ###### */
 /* IMAGES */
-/* ###### */
+/* ------ */
 
 .hero-img { object-fit: cover; }
