@@ -169,6 +169,17 @@ section { padding: 100px 0; }
 }
 
 
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+.hero-img { object-fit: cover; }
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ------------- */
+
 @media (max-width: 600px) {
 
   article,
@@ -200,10 +211,3 @@ section { padding: 100px 0; }
   .row-logo-nav { flex-direction: column; }
 
 }
-
-
-/* ###### */
-/* IMAGES */
-/* ------ */
-
-.hero-img { object-fit: cover; }
