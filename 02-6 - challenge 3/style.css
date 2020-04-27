@@ -191,11 +191,11 @@ section { padding: 100px 0; }
   .hero-content { margin-bottom: 2em; }
 
   .header-nav,
-  .row-article,
-  .row-hero,
-  .row-logo-nav { flex-direction: column; }
+  .row--article,
+  .row--hero,
+  .row--logo-nav { flex-direction: column; }
 
-  .row-hero {
+  .row--hero {
     align-items: center;
     text-align: center;
   }
@@ -208,6 +208,6 @@ section { padding: 100px 0; }
 
   .header-nav-ul:last-child { margin: 0 auto; }
 
-  .row-logo-nav { flex-direction: column; }
+  .row--logo-nav { flex-direction: column; }
 
 }
