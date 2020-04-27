@@ -178,11 +178,11 @@ section { padding: 100px 0; }
   article,
   .hero-content { margin-bottom: 2em; }
 
-  .row-article { flex-direction: column; }
+  .row-article,
+  .row-hero { flex-direction: column; }
 
   .row-hero {
     align-items: center;
-    flex-direction: column;
     text-align: center;
   }
 
