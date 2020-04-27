@@ -170,10 +170,15 @@ section { padding: 100px 0; }
 
 @media (max-width: 600px) {
 
+  article,
+  aside,
   .hero-content,
   .hero-img { width: unset; }
 
+  article,
   .hero-content { margin-bottom: 2em; }
+
+  .row-article { flex-direction: column; }
 
   .row-hero {
     align-items: center;
