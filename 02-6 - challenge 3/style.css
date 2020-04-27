@@ -28,7 +28,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -168,6 +168,7 @@ section { padding: 100px 0; }
   justify-content: space-between;
 }
 
+
 @media (max-width: 600px) {
 
   article,
@@ -178,13 +179,25 @@ section { padding: 100px 0; }
   article,
   .hero-content { margin-bottom: 2em; }
 
+  .header-nav,
   .row-article,
-  .row-hero { flex-direction: column; }
+  .row-hero,
+  .row-logo-nav { flex-direction: column; }
 
   .row-hero {
     align-items: center;
     text-align: center;
   }
+
+}
+
+@media (max-width: 850px) {
+
+  .a-logo { margin: .5em; }
+
+  .header-nav-ul:last-child { margin: 0 auto; }
+
+  .row-logo-nav { flex-direction: column; }
 
 }
 
