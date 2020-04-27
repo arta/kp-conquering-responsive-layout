@@ -191,8 +191,7 @@ section { padding: 100px 0; }
   .hero-content { margin-bottom: 2em; }
 
   .header-nav,
-  .row--article,
-  .row--hero { flex-direction: column; }
+  .row { flex-direction: column; }
 
   .row--hero {
     align-items: center;
