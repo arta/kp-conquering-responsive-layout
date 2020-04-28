@@ -32,7 +32,10 @@ body {
   margin: 0;
 }
 
-img { max-width: 100%; }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 
 /* ########## */
