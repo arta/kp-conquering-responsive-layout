@@ -208,6 +208,6 @@ section { padding: 100px 0; }
 
   .header-nav-ul:last-child { margin: 0 auto; }
 
-  .row--logo-nav { flex-direction: column; }
+  .row--header { flex-direction: column; }
 
 }
