@@ -73,7 +73,7 @@ small {
 /* ------ */
 
 .article-section-bottom,
-.article-section-middle { color: whitesmoke; }
+.article-section-middle { color: var(--clr-cream); }
 
 section { padding: 6em 0; }
 
