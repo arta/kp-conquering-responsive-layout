@@ -93,11 +93,6 @@ div.article-col:first-child { margin-bottom: 2em; }
   min-height: 660px;
 }
 
-.flextrack {
-  display: flex;
-  flex-direction: column;
-}
-
 .article-section-bottom { background: var(--clr-caramel); }
 
 .article-section-hero {
@@ -132,6 +127,6 @@ img { object-fit: cover; }
     order: -1;
   }
 
-  .flextrack { flex-direction: unset; }
+  .flextrack { display: flex; }
 
 }
