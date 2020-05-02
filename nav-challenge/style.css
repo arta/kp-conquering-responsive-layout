@@ -9,7 +9,10 @@
 
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
+    border: 1px dotted hotpink;
     box-sizing: border-box;
 }
 
@@ -19,23 +22,19 @@ body {
     font-size: 1.3rem;
 }
 
-img {
-    max-width: 100%;
-}
+img { max-width: 100%; }
 
 h1 {
     font-size: 3rem;
     margin-top: 0;
 }
 
-.section-title {
-    color: #87629A;
-}
+.section-title { color: #87629A; }
 
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: #23424A;
     font-weight: 900;
     background-color: #38CFD9;
@@ -44,9 +43,7 @@ h1 {
 }
 
 .btn:hover,
-.btn:focus {
-    opacity: .75; 
-}
+.btn:focus { opacity: .75; }
 
 .container {
     width: 80%;
@@ -62,11 +59,7 @@ header {
     text-align: center;
 }
 
-.nav {
-    width: 100%;
-}
-
-
+.nav { width: 100%; }
 
 .nav-toggle {
     cursor: pointer;
@@ -78,15 +71,12 @@ header {
     background: #072A2D;
     color: white;
     transition: opacity 250ms ease;
-    
     position: absolute;
     left: 0;
 }
 
 .nav-toggle:focus,
-.nav-toggle:hover {
-    opacity: .75;
-}
+.nav-toggle:hover { opacity: .75; }
 
 .hamburger {
     width: 50%;
@@ -108,17 +98,12 @@ header {
     width: 100%;
 }
 
-.hamburger::before {
-    transform: translateY(-6px);
-}
+.hamburger::before { transform: translateY(-6px); }
 
-.hamburger::after {
-    transform: translateY(3px);
-}
+.hamburger::after { transform: translateY(3px); }
 
 /* made changes here from video
    to make it more accessible.
-   
    Works the same :) */
 .nav {
     visibility: hidden;
@@ -130,13 +115,11 @@ header {
     visibility: visible;
     height: auto;
     position: relative;
-} 
-
+}
 
 .logo {
     height: 30px;
 }
-
 
 .hero {
     padding: 100px 0;
@@ -144,36 +127,26 @@ header {
     color: #FFF;
 }
 
-.hero__img {
-    margin-top: 2em;
-}
+.hero__img { margin-top: 2em; }
 
+.hero p { margin-bottom: 3em; }
 
-.hero p {
-    margin-bottom: 3em;
-}
-
-.main {
-    margin-top: 3em;
-}
-
+.main { margin-top: 3em; }
 
 .sidebar {
     padding: 1em;
     text-align: center;
     color: #fff;
     background-color: #136c72;
-
 }
-
 
 
 @media (min-width: 800px) {
 
-    
-    .nav-toggle {
-        display: none;
-    }
+    .hero__text,
+    .primary-content { width: 62%; }
+
+    .nav-toggle { display: none; }
 
     .nav {
         visibility: visible;
@@ -184,26 +157,14 @@ header {
     .row {
         display: flex;
         justify-content: space-between;
-
     }
 
-    .hero__text {
-        width: 62%;
-    }
-    
     .hero__img {
         width: 32%;
         align-self: flex-start;
         margin: 0;
     }
-    
-    .primary-content {
-        width: 62%;
-    }
 
-    .sidebar {
-        width: 32%;
-    }
-    
-    
+    .sidebar { width: 32%; }
+
 }
