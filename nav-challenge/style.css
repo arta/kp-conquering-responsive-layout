@@ -133,6 +133,8 @@ header {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.nav__link:focus,
 .nav__link:hover { border-color: white; }
 
 .nav__link--button {
