@@ -23,3 +23,26 @@ body {
   font-size: 1rem;
   margin: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media (min-width: 700px) {
+
+}
+
+@media (min-width: 1000px) {
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+}
