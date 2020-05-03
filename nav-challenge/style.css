@@ -12,7 +12,7 @@
 *,
 *::before,
 *::after {
-    /* border: 1px dotted hotpink; */
+    border: 1px dotted hotpink;
     box-sizing: border-box;
 }
 
@@ -171,10 +171,25 @@ header {
 
     .nav-toggle { display: none; }
 
+    .logo { align-self: center; }
+
     .nav {
+        position: unset;
         visibility: visible;
         display: flex;
         height: auto;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__list--primary { margin: 0 auto; }
+
+    .nav__link {
+        margin: 0 .3em;
+        padding: .2em .8em;
     }
 
     .row {
