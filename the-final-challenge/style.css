@@ -2,6 +2,16 @@
 /* GLOBAL */
 /* ------ */
 
+:root {
+  --clr-ash:   #6F737F;
+  --clr-dusk:  #3B4050;
+  --clr-gold:  #A59678;
+  --clr-night: #2E323F;
+
+  --fnt-body:     'Montserrat', sans-serif;
+  --fnt-heading:  'Saira Condensed', sans-serif;
+}
+
 *,
 *::after,
 *::before {
