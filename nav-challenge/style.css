@@ -12,7 +12,7 @@
 *,
 *::before,
 *::after {
-    border: 1px dotted hotpink;
+    /* border: 1px dotted hotpink; */
     box-sizing: border-box;
 }
 
@@ -115,6 +115,29 @@ header {
     visibility: visible;
     height: auto;
     position: relative;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__link {
+    border: 2px solid transparent;
+    border-radius: 1em;
+    color: white;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: .3rem;
+    padding: .4em 1.4em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav__link:hover { border-color: white; }
+
+.nav__link--button {
+    background: white;
+    color: #136c72;
 }
 
 .logo {
