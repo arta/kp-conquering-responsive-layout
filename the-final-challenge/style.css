@@ -105,7 +105,7 @@ header {
 }
 
 nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-right: 2.5vw;
   padding: 1em 0;
@@ -117,6 +117,8 @@ nav {
 .container--header { justify-content: space-between; }
 
 .logo { background: var(--clr-night); }
+
+.show-nav { display: flex; }
 
 
 /* ###### */
