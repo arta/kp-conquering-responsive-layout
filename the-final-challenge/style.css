@@ -20,6 +20,7 @@
 }
 
 body {
+  font-family: var(--fnt-body);
   font-size: 1rem;
   margin: 0;
 }
@@ -28,6 +29,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+/* ########## */
+/* TYPOGRAPHY */
+/* ---------- */
+
+h1,
+h2,
+h3 { font-family: var(--fnt-heading); }
+
+.aside-h3,
+.top-point-h2 { font-size: 1.875rem; }
+
+.aside-p,
+.top-point-p { font-size: 1.125rem; }
+
+h1 {
+  font-size: 4.625rem;
+  letter-spacing: -2px;
+}
+
+.article-h2 { font-size: 2.25rem; }
+
+.footer-h2 { font-size: 2.75rem; }
+
+.footer-h3 { font-size: 1.3125rem; }
+
+.article-p { font-size: 1.3125rem; }
+
+.hero-p { font-size: 1.5rem; }
+
+/* ---------- */
+
+.a-footer,
+.a-hero-cta,
+.a-nav-item { text-decoration: none; }
+
+.a-hero-cta,
+.a-nav-item { font-family: var(--fnt-heading); }
+
+.a-hero-cta {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.a-nav-item { font-size: 1.125rem; }
 
 
 /* ############# */
