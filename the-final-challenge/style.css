@@ -88,12 +88,30 @@ h1 {
 /* NAVIGATION :: HEADER */
 /* -------------------- */
 
+.btn--close-nav,
+.btn--open-nav {
+  background: transparent;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+}
+
 header {
-  padding: 1em;
+  padding: 1em 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5vw;
+  padding: 1em 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .container--header { justify-content: space-between; }
@@ -104,6 +122,8 @@ header {
 /* ###### */
 /* LAYOUT */
 /* ------ */
+
+main { margin-top: 7em; }
 
 .container {
   margin: 0 auto;
