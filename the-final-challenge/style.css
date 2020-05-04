@@ -4,6 +4,7 @@
 
 :root {
   --clr-ash:   #6F737F;
+  --clr-cloud: #E0E0E2;
   --clr-dusk:  #3B4050;
   --clr-gold:  #A59678;
   --clr-night: #2E323F;
@@ -15,7 +16,7 @@
 *,
 *::after,
 *::before {
-  border: 1px dotted hotpink;
+  /* border: 1px dotted hotpink; */
   box-sizing: border-box;
 }
 
@@ -23,7 +24,6 @@ body {
   font-family: var(--fnt-body);
   font-size: 1rem;
   margin: 0;
-  /* padding: 1em; */
 }
 
 img {
@@ -81,8 +81,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.a-nav-item { font-size: 1.125rem; }
-
 
 /* #################### */
 /* NAVIGATION :: HEADER */
@@ -91,12 +89,25 @@ h1 {
 .btn--close-nav,
 .btn--open-nav {
   background: transparent;
+  border: none;
+  color: currentColor;
   font-size: 2.5rem;
   width: 60px;
   height: 60px;
 }
 
+.a-nav-item {
+  color: currentColor;
+  font-size: 1.75rem;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.btn--close-nav { margin-right: 2.5vw; }
+
 header {
+  background: var(--clr-night);
+  color: var(--clr-cloud);
   padding: 1em 0;
   position: absolute;
   top: 0;
@@ -105,18 +116,25 @@ header {
 }
 
 nav {
+  align-items: flex-end;
+  background: var(--clr-night);
   display: none;
   flex-direction: column;
-  margin-right: 2.5vw;
   padding: 1em 0;
   position: absolute;
   top: 0;
   right: 0;
+  width: 50vw;
 }
 
 .container--header { justify-content: space-between; }
 
-.logo { background: var(--clr-night); }
+.header-nav-items {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+}
 
 .show-nav { display: flex; }
 
@@ -140,6 +158,8 @@ main { margin-top: 7em; }
 /* ------------- */
 
 @media (min-width: 700px) {
+
+  .a-nav-item { font-size: 1.125rem; }
 
 }
 
