@@ -23,6 +23,7 @@ body {
   font-family: var(--fnt-body);
   font-size: 1rem;
   margin: 0;
+  /* padding: 1em; */
 }
 
 img {
@@ -78,6 +79,35 @@ h1 {
 .a-nav-item { font-size: 1.125rem; }
 
 
+/* #################### */
+/* NAVIGATION :: HEADER */
+/* -------------------- */
+
+header {
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.container--header { justify-content: space-between; }
+
+.logo { background: var(--clr-night); }
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+.container {
+  margin: 0 auto;
+  width: 95vw;
+}
+
+.flexrow { display: flex; }
+
+
 /* ############# */
 /* MEDIA QUERIES */
 /* ------------- */
@@ -88,9 +118,6 @@ h1 {
 
 @media (min-width: 1000px) {
 
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
+  .container { max-width: 1200px; }
 
 }
