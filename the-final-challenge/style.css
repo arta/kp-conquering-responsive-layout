@@ -68,6 +68,11 @@ h1 {
 
 .article-p { font-size: 1.3125rem; }
 
+.footer-p {
+  margin: 0 auto 2em;
+  max-width: 500px;
+}
+
 .hero-p { font-size: 1.5rem; }
 
 /* ---------- */
@@ -145,7 +150,10 @@ nav {
   width: 50vw;
 }
 
-.container--header { justify-content: space-between; }
+.container--header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .header-nav-items {
   align-self: flex-start;
@@ -218,7 +226,10 @@ footer,
 
 aside { margin: 2em 0; }
 
-footer { font-size: .95rem; }
+footer {
+  font-size: .95rem;
+  text-align: center;
+}
 
 main { margin-top: 5em; }
 
@@ -228,8 +239,6 @@ main { margin-top: 5em; }
   margin: 0 auto;
   width: 95vw;
 }
-
-.container--header { display: flex; }
 
 .footer-columns {
   display: flex;
@@ -241,13 +250,11 @@ main { margin-top: 5em; }
   display: flex;
   flex-basis: 30%;
   flex-direction: column;
-  text-align: center;
 }
 
 .footer-col:first-child {
   flex-basis: 100%;
   margin-bottom: 1em;
-  text-align: unset;
 }
 
 
@@ -275,6 +282,8 @@ main { margin-top: 5em; }
 
   .aside-col { flex-basis: 31.5%; }
 
+  .footer-columns { justify-content: space-evenly; }
+
   .article-img {
     height: 300px;
     object-fit: cover;
@@ -285,22 +294,24 @@ main { margin-top: 5em; }
 
 @media (min-width: 1000px) {
 
-  main,
-  footer { font-size: 1rem; }
-
   h1 { flex-basis: 30%; margin-bottom: 0; }
 
-  .footer-h2 { text-align: center; }
+  .footer-h2 { text-align: center;}
 
   .aside-h3 { font-size: 1.875rem; }
 
   .aside-p { font-size: 1.125rem; }
 
-  aside {
-    flex-basis: 31%;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 0;
+  .footer-p { margin: unset; }
+
+  main,
+  footer { font-size: 1rem; }
+
+  .container--article,
+  .container--hero,
+  .container--top-points {
+    display: flex;
+    justify-content: space-between;
   }
 
   .article-col,
@@ -314,14 +325,24 @@ main { margin-top: 5em; }
 
   .container { max-width: 1200px; }
 
-  .container--article,
-  .container--hero,
-  .container--top-points {
-    display: flex;
-    justify-content: space-between;
+  aside {
+    flex-basis: 31%;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  .hero-col{ margin-top: auto; }
+  footer { text-align: left; }
+
+  .footer-col { flex-basis: 12%; }
+
+  .footer-col:first-child {
+    flex-basis: 35%;
+    margin-bottom: unset;
+    text-align: left;
+  }
+
+  .hero-col { margin-top: auto; }
 
   .top-point-col {
     flex-basis: 30%;
