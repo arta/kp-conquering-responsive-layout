@@ -54,6 +54,7 @@ h3 { font-family: var(--fnt-heading); }
 h1 {
   font-size: 4.625rem;
   letter-spacing: -2px;
+  line-height: 1.1;
 }
 
 .article-h2 { font-size: 2.25rem; }
@@ -76,8 +77,13 @@ h1 {
 .a-nav-item { font-family: var(--fnt-heading); }
 
 .a-hero-cta {
+  border: 1px solid black;
+  border-radius: 1em;
+  display: inline-block;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  margin-top: .8em;
+  padding: .2em 1.7em;
   text-transform: uppercase;
 }
 
@@ -143,7 +149,7 @@ nav {
 /* LAYOUT */
 /* ------ */
 
-main { margin-top: 7em; }
+main { margin-top: 5em; }
 
 .container {
   margin: 0 auto;
@@ -151,6 +157,10 @@ main { margin-top: 7em; }
 }
 
 .flexrow { display: flex; }
+
+.main-section-hero {
+  padding: 4em 0;
+}
 
 
 /* ############# */
