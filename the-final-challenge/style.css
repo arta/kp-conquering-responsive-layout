@@ -149,6 +149,34 @@ nav {
 
 .show-nav { display: flex; }
 
+.logo-img { margin: 1.1em 0; }
+
+@media (min-width: 700px) {
+
+  .a-nav-item {
+    align-self: center;
+    font-size: 1.125rem;
+    margin: 0 0 0 2.5em;
+  }
+
+  .btn--close-nav,
+  .btn--open-nav { display: none; }
+
+  nav {
+    display: unset;
+    padding: unset;
+    position: unset;
+    width: unset;
+  }
+
+  .header-nav-items {
+    flex-direction: unset;
+    height: 100%;
+    margin: unset;
+  }
+
+}
+
 
 /* ###### */
 /* LAYOUT */
@@ -218,8 +246,6 @@ main { margin-top: 5em; }
   .aside-h3 { font-size: 1.3rem; }
 
   .aside-p { font-size: 1rem; }
-
-  .a-nav-item { font-size: 1.125rem; }
 
   aside {
     display: flex;
