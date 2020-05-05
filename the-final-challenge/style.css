@@ -16,7 +16,7 @@
 *,
 *::after,
 *::before {
-  border: 1px dotted hotpink;
+  /* border: 1px dotted hotpink; */
   box-sizing: border-box;
 }
 
@@ -285,7 +285,8 @@ main { margin-top: 5em; }
 
 @media (min-width: 1000px) {
 
-  body { font-size: 1rem; }
+  main,
+  footer { font-size: 1rem; }
 
   h1 { flex-basis: 30%; margin-bottom: 0; }
 
@@ -301,8 +302,6 @@ main { margin-top: 5em; }
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  footer { font-size: 1rem; }
 
   .article-col,
   .hero-col { flex-basis: 63%; }
