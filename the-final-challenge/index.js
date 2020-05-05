@@ -1,7 +1,7 @@
 const get = (elementId) => document.getElementById(elementId)
 
-const btnOpenNav  = get('btn--open-nav')
-const btnCloseNav = get('btn--close-nav')
+const btnOpenNav  = get('btn-open-nav')
+const btnCloseNav = get('btn-close-nav')
 const headerNav   = get('header-nav')
 
 const toggleNav = function () {

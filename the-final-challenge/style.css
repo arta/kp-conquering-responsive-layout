@@ -102,8 +102,8 @@ h1 {
 /* NAVIGATION :: HEADER */
 /* -------------------- */
 
-.btn--close-nav,
-.btn--open-nav {
+.btn-close-nav,
+.btn-open-nav {
   background: transparent;
   border: none;
   color: currentColor;
@@ -126,7 +126,7 @@ h1 {
   padding: .2em 1.2em;
 }
 
-.btn--close-nav { margin-right: 2.5vw; }
+.btn-close-nav { margin-right: 2.5vw; }
 
 header {
   background: var(--clr-night);
@@ -183,8 +183,8 @@ nav {
 
   .a-sign-up-cta { margin-left: 1em; }
 
-  .btn--close-nav,
-  .btn--open-nav { display: none; }
+  .btn-close-nav,
+  .btn-open-nav { display: none; }
 
   nav {
     display: unset;
