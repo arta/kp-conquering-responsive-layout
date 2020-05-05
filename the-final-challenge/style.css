@@ -154,6 +154,7 @@ nav {
 /* LAYOUT */
 /* ------ */
 
+article,
 footer,
 .main-section-hero,
 .main-section-top-points {
@@ -170,7 +171,7 @@ aside { margin: 2em 0; }
 
 footer { font-size: .95rem; }
 
-main { margin: 5em 0; }
+main { margin-top: 5em; }
 
 .aside-col { padding: 1.3em; }
 
@@ -237,6 +238,49 @@ main { margin: 5em 0; }
 
 @media (min-width: 1000px) {
 
+  body { font-size: 1rem; }
+
+  h1 { flex-basis: 30%; margin-bottom: 0; }
+
+  .footer-h2 { text-align: center; }
+
+  .aside-h3 { font-size: 1.875rem; }
+
+  .aside-p { font-size: 1.125rem; }
+
+  aside {
+    flex-basis: 31%;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  footer { font-size: 1rem; }
+
+  .article-col,
+  .hero-col { flex-basis: 63%; }
+
+  .aside-col,
+  .top-point-col { margin: unset; }
+
+  .aside-col +
+  .aside-col { margin-top: 1.3em; }
+
   .container { max-width: 1200px; }
+
+  .container--article,
+  .container--hero,
+  .container--top-points {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-col{ margin-top: auto; }
+
+  .top-point-col {
+    flex-basis: 30%;
+  }
+
+  .article-img { height: unset; }
 
 }
