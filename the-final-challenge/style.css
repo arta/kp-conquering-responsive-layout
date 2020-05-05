@@ -22,7 +22,7 @@
 
 body {
   font-family: var(--fnt-body);
-  font-size: 1rem;
+  font-size: .8rem;
   margin: 0;
 }
 
@@ -168,6 +168,8 @@ footer,
 
 aside { margin: 2em 0; }
 
+footer { font-size: .95rem; }
+
 main { margin: 5em 0; }
 
 .aside-col { padding: 1.3em; }
@@ -212,7 +214,24 @@ main { margin: 5em 0; }
 
 @media (min-width: 700px) {
 
+  .aside-h3 { font-size: 1.3rem; }
+
+  .aside-p { font-size: 1rem; }
+
   .a-nav-item { font-size: 1.125rem; }
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aside-col { flex-basis: 31.5%; }
+
+  .article-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
 
 }
 
