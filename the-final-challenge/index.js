@@ -2,10 +2,10 @@ const get = (elementId) => document.getElementById(elementId)
 
 const btnOpenNav  = get('btn-open-nav')
 const btnCloseNav = get('btn-close-nav')
-const headerNav   = get('header-nav')
+const navHeader   = get('nav-header')
 
 const toggleNav = function () {
-  headerNav.classList.toggle('show-nav')
+  navHeader.classList.toggle('show-nav')
 }
 
 btnOpenNav.addEventListener('click', () => toggleNav())

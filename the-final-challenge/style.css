@@ -78,15 +78,15 @@ h1 {
 /* ---------- */
 
 .a-footer,
-.a-hero-cta,
-.a-nav-item { text-decoration: none; }
+.a-cta-hero,
+.a-nav-header { text-decoration: none; }
 
-.a-hero-cta,
-.a-nav-item { font-family: var(--fnt-heading); }
+.a-cta-hero,
+.a-nav-header { font-family: var(--fnt-heading); }
 
 .a-footer { margin-bottom: 1em; }
 
-.a-hero-cta {
+.a-cta-hero {
   border: 1px solid black;
   border-radius: 1em;
   display: inline-block;
@@ -112,14 +112,14 @@ h1 {
   height: 60px;
 }
 
-.a-nav-item {
+.a-nav-header {
   color: currentColor;
   font-size: 1.75rem;
   margin: 1em 0;
   text-transform: uppercase;
 }
 
-.a-sign-up-cta {
+.a-cta-signup {
   border: 1px solid black;
   border-radius: 1em;
   margin-top: 0;
@@ -155,7 +155,7 @@ nav {
   justify-content: space-between;
 }
 
-.header-nav-items {
+.items-nav-header {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -175,13 +175,13 @@ nav {
 
 @media (min-width: 700px) {
 
-  .a-nav-item {
+  .a-nav-header {
     align-self: center;
     font-size: 1.125rem;
     margin: 0 0 0 2.5em;
   }
 
-  .a-sign-up-cta { margin-left: 1em; }
+  .a-cta-signup { margin-left: 1em; }
 
   .btn-close-nav,
   .btn-open-nav { display: none; }
@@ -193,7 +193,7 @@ nav {
     width: unset;
   }
 
-  .header-nav-items {
+  .items-nav-header {
     flex-direction: unset;
     height: 100%;
     margin: unset;
