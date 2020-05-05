@@ -114,6 +114,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.a-sign-up-cta {
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: .2em 1.2em;
+}
+
 .btn--close-nav { margin-right: 2.5vw; }
 
 header {
