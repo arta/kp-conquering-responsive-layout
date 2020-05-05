@@ -16,7 +16,7 @@
 *,
 *::after,
 *::before {
-  /* border: 1px dotted hotpink; */
+  border: 1px dotted hotpink;
   box-sizing: border-box;
 }
 
@@ -175,6 +175,14 @@ main { margin-top: 5em; }
 .flexrow { display: flex; }
 
 .aside-col { padding: 1.3em; }
+
+
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+.article-img { margin-bottom: 1.3125em; }
+
 
 /* ############# */
 /* MEDIA QUERIES */
