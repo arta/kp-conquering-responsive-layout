@@ -46,7 +46,10 @@ h2,
 h3 { font-family: var(--fnt-heading); }
 
 .aside-h3,
-.top-point-h2 { font-size: 1.875rem; }
+.top-point-h2 {
+  font-size: 1.875rem;
+  margin-bottom: .3em;
+}
 
 .aside-p,
 .top-point-p { font-size: 1.125rem; }
@@ -149,7 +152,20 @@ nav {
 /* LAYOUT */
 /* ------ */
 
+aside { margin: 2em 0; }
+
 main { margin-top: 5em; }
+
+.aside-col,
+.top-point-col {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.main-section-hero,
+.main-section-top-points {
+  padding: 4em 0;
+}
 
 .container {
   margin: 0 auto;
@@ -158,10 +174,7 @@ main { margin-top: 5em; }
 
 .flexrow { display: flex; }
 
-.main-section-hero {
-  padding: 4em 0;
-}
-
+.aside-col { padding: 1.3em; }
 
 /* ############# */
 /* MEDIA QUERIES */
