@@ -213,7 +213,9 @@ nav {
   justify-content: space-between;
 }
 
-.drop-shadow { box-shadow: 2px 2px 8px #1d1d1d; }
+.box-shadow { box-shadow: 2px 2px 8px #1d1d1d; }
+
+.display-nav { display: flex; }
 
 .items-nav-header {
   align-self: flex-start;
@@ -221,8 +223,6 @@ nav {
   flex-direction: column;
   margin-left: 3em;
 }
-
-.show-nav { display: flex; }
 
 /* -------------------- */
 

@@ -5,37 +5,36 @@ const btnCloseNav = get('btn-close-nav')
 const header      = get('header')
 const navHeader   = get('nav-header')
 
-const toggleNav = function () {
-  navHeader.classList.toggle('show-nav')
+// Adapted from: https://stackoverflow.com/a/4620986/247626
+let shadowTimeout
+
+const dropShadow = function () {
+
+  header.classList.add('box-shadow')
+
+  if (innerWidth <= 700) {
+    navHeader.classList.add('box-shadow')
+  }
+
+  clearTimeout(shadowTimeout)
+
+  shadowTimeout = setTimeout(() => {
+    header.classList.remove('box-shadow')
+    navHeader.classList.remove('box-shadow')
+  }, 150)
+
 }
+// dunno why, but ..
+// .. it works without the JS ubiquitous terminating `}, false)`
+
+const toggleNav = function () {
+  navHeader.classList.toggle('display-nav')
+}
+
+// Apparently & interestingly:
+//  if no recepient is provided for a method call
+//  then `window` would be the default recipient:
+window.addEventListener('scroll', () => dropShadow())
 
 btnOpenNav.addEventListener('click', () => toggleNav())
 btnCloseNav.addEventListener('click', () => toggleNav())
-
-// https://stackoverflow.com/a/4620986/247626
-
-// apparently & interestingly,
-// if no recepient is provided for a method call, e.g. addEventListener()
-// then `window` is the recipient
-
-let timer
-
-addEventListener('scroll', () => {
-
-  header.classList.add('drop-shadow')
-
-  if (innerWidth <= 700) {
-    navHeader.classList.add('drop-shadow')
-  }
-
-  clearTimeout(timer)
-
-  timer = setTimeout(() => {
-    header.classList.remove('drop-shadow')
-    navHeader.classList.remove('drop-shadow')
-  }, 150)
-
-})
-
-// dunno why, but ..
-// .. it works without the JS ubiquitous `..}, false)`
