@@ -3,13 +3,13 @@
 /* ------ */
 
 :root {
-  --clr-ash:   #6F737F;
-  --clr-smoke: #888C99;
-  --clr-cloud: #E0E0E2;
-  --clr-dusk:  #3B4050;
-  --clr-gold:  #A59678;
   --clr-haze:  #F1F1F1;
+  --clr-cloud: #E0E0E2;
+  --clr-smoke: #888C99;
+  --clr-ash:   #6F737F;
+  --clr-dusk:  #3B4050;
   --clr-night: #2E323F;
+  --clr-gold:  #A59678;
 
   --fnt-body:     'Montserrat', sans-serif;
   --fnt-heading:  'Saira Condensed', sans-serif;
@@ -86,6 +86,8 @@ h1 {
 }
 
 .p-hero { font-size: 1.5rem; }
+
+.p-top-point--last { margin-bottom: 0; }
 
 .span-h1-hero { color: var(--clr-gold); }
 
@@ -265,16 +267,15 @@ nav {
 
 footer,
 .section-main-article,
-.section-main-hero,
-.section-main-top-points {
-  padding: 4em 0;
-}
+.section-main-top-points { padding: 5rem 0; }
+
+.col-aside +
+.col-aside,
+.col-top-point +
+.col-top-point { margin-top: 2em; }
 
 .col-aside,
-.col-top-point {
-  margin: 2em 0;
-  text-align: center;
-}
+.col-top-point { text-align: center; }
 
 /* ------ */
 
@@ -290,7 +291,7 @@ footer {
   text-align: center;
 }
 
-main { margin-top: 5em; }
+main { margin-top: 2em; }
 
 .columns-footer {
   display: flex;
@@ -322,6 +323,7 @@ main { margin-top: 5em; }
 .section-main-hero {
   background: var(--clr-dusk);
   color: var(--clr-cloud);
+  padding: 7rem 0;
 }
 
 .section-main-top-points { background: var(--clr-haze); }
@@ -344,6 +346,9 @@ main { margin-top: 5em; }
   .p-aside { font-size: 1rem; }
 
   /* ------------- */
+
+  .col-aside +
+  .col-aside { margin-top: unset; }
 
   aside {
     display: flex;
@@ -379,13 +384,19 @@ main { margin-top: 5em; }
 
   .p-footer { margin: unset; }
 
+  .p-top-point { margin-bottom: 0; }
+
   /* ------------- */
 
   main,
   footer { font-size: 1rem; }
 
+  .section-main-article,
+  .section-main-hero,
+  .section-main-top-points { padding: 7rem 0; }
+
   article,
-  .col-hero { flex-basis: 63%; }
+  .col-hero { flex-basis: 60%; }
 
   .container--article,
   .container--hero,
@@ -400,6 +411,9 @@ main { margin-top: 5em; }
   .col-aside +
   .col-aside { margin-top: 1.3em; }
 
+  .col-top-point +
+  .col-top-point { margin-top: unset; }
+
   /* ------------- */
 
   aside {
@@ -411,6 +425,8 @@ main { margin-top: 5em; }
   }
 
   footer { text-align: left; }
+
+  main { margin-top: 3em; }
 
   .columns-footer { justify-content: space-between; }
 
@@ -428,7 +444,10 @@ main { margin-top: 5em; }
 
   .col-top-point { flex-basis: 30%; }
 
-  .container { max-width: 1200px; }
+  .container {
+    max-width: 1200px;
+      width: 90vw;
+  }
 
   /* ------------- */
 
