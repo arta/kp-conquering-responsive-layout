@@ -8,6 +8,8 @@ const header      = get('header')
 const navHeader   = get('nav-header')
 
 // Adapted from: https://stackoverflow.com/a/4620986/247626
+// dunno why, but ..
+// .. it works without the JS ubiquitous terminating `}, false)`
 const dropShadow = function () {
 
   header.classList.add('box-shadow')
@@ -24,8 +26,6 @@ const dropShadow = function () {
   }, 150)
 
 }
-// dunno why, but ..
-// .. it works without the JS ubiquitous terminating `}, false)`
 
 const toggleNav = function () {
   navHeader.classList.toggle('display-nav')
