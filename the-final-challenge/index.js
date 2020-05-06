@@ -12,7 +12,7 @@ const navHeader   = get('nav-header')
 
 let shadowTimeout
 
-const dropShadow = function () {
+const addTimedOutShadow = function () {
   header.classList.add('box-shadow')
   if (innerWidth <= 700) { navHeader.classList.add('box-shadow') }
 
@@ -30,7 +30,7 @@ const toggleNav = () => navHeader.classList.toggle('display-nav')
 // Apparently & interestingly:
 //  if no recepient is provided for a method call
 //  then `window` would be the default recipient:
-window.addEventListener('scroll', () => dropShadow())
+window.addEventListener('scroll', () => addTimedOutShadow())
 
 btnOpenNav.addEventListener('click', () => toggleNav())
 btnCloseNav.addEventListener('click', () => toggleNav())
