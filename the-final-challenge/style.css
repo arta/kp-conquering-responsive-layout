@@ -87,8 +87,9 @@ h1 {
 .a-nav-header { font-family: var(--fnt-heading); }
 
 .a-cta-hero {
-  border: 1px solid black;
-  border-radius: 1em;
+  background: var(--clr-gold);
+  border-radius: 2em;
+  color: var(--clr-cloud);
   display: inline-block;
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -97,12 +98,34 @@ h1 {
   text-transform: uppercase;
 }
 
+.a-cta-hero:focus,
+.a-cta-hero:hover {
+  color: white;
+  box-shadow: 2px 2px 8px gray;
+}
+
 .a-footer { margin-bottom: 1em; }
 
 
 /* #################### */
 /* NAVIGATION :: HEADER */
 /* -------------------- */
+
+.a-nav-header:focus,
+.a-nav-header:hover,
+.btn-close-nav:focus,
+.btn-close-nav:hover,
+.btn-open-nav:focus,
+.btn-open-nav:hover {
+  color: white;
+  text-shadow: 2px 2px 8px gray;
+}
+
+.a-cta-signup:focus,
+.a-cta-signup:hover {
+  box-shadow: 2px 2px 8px #181818;
+  text-shadow: none;
+}
 
 .btn-close-nav,
 .btn-open-nav {
@@ -126,16 +149,6 @@ h1 {
   font-size: 1.75rem;
   margin: 1em 0;
   text-transform: uppercase;
-}
-
-.a-nav-header:focus,
-.a-nav-header:hover,
-.btn-close-nav:focus,
-.btn-close-nav:hover,
-.btn-open-nav:focus,
-.btn-open-nav:hover {
-  color: white;
-  text-shadow: 2px 2px 8px gray;
 }
 
 .btn-close-nav {
