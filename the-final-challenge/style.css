@@ -7,6 +7,7 @@
   --clr-cloud: #E0E0E2;
   --clr-dusk:  #3B4050;
   --clr-gold:  #A59678;
+  --clr-haze:  #F1F1F1;
   --clr-night: #2E323F;
 
   --fnt-body:     'Montserrat', sans-serif;
@@ -66,6 +67,8 @@ h1 {
 .h2-article { font-size: 2.25rem; }
 
 .h2-footer { font-size: 2.75rem; }
+
+.h2-top-point { color: var(--clr-gold); }
 
 .h3-footer { font-size: 1.3125rem; }
 
@@ -301,6 +304,8 @@ main { margin-top: 5em; }
   background: var(--clr-dusk);
   color: var(--clr-cloud);
 }
+
+.section-main-top-points { background: var(--clr-haze); }
 
 /* ###### */
 /* IMAGES */
