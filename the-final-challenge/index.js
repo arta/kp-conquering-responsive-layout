@@ -1,13 +1,13 @@
 const get = (elementId) => document.getElementById(elementId)
 
+let shadowTimeout
+
 const btnOpenNav  = get('btn-open-nav')
 const btnCloseNav = get('btn-close-nav')
 const header      = get('header')
 const navHeader   = get('nav-header')
 
 // Adapted from: https://stackoverflow.com/a/4620986/247626
-let shadowTimeout
-
 const dropShadow = function () {
 
   header.classList.add('box-shadow')
