@@ -1,15 +1,17 @@
-const get = (elementId) => document.getElementById(elementId)
+// Shadow manipulation adapted from:
+// https://stackoverflow.com/a/4620986/247626
+// dunno why, but ..
+// .. it works without the JS ubiquitous terminating `}, false)`
 
-let shadowTimeout
+const get = (elementId) => document.getElementById(elementId)
 
 const btnOpenNav  = get('btn-open-nav')
 const btnCloseNav = get('btn-close-nav')
 const header      = get('header')
 const navHeader   = get('nav-header')
 
-// Adapted from: https://stackoverflow.com/a/4620986/247626
-// dunno why, but ..
-// .. it works without the JS ubiquitous terminating `}, false)`
+let shadowTimeout
+
 const dropShadow = function () {
 
   header.classList.add('box-shadow')
@@ -20,11 +22,13 @@ const dropShadow = function () {
 
   clearTimeout(shadowTimeout)
 
-  shadowTimeout = setTimeout(() => {
-    header.classList.remove('box-shadow')
-    navHeader.classList.remove('box-shadow')
-  }, 150)
+  shadowTimeout = setTimeout(() => removeShadow(), 150)
 
+}
+
+const removeShadow = function () {
+  header.classList.remove('box-shadow')
+  navHeader.classList.remove('box-shadow')
 }
 
 const toggleNav = function () {
