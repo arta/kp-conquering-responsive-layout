@@ -12,7 +12,7 @@ const navHeader   = get('nav-header')
 
 let shadowTimeout
 
-const addTimedOutShadow = function () {
+const addTimedOutShadow = () => {
   header.classList.add('box-shadow')
   if (innerWidth <= 700) { navHeader.classList.add('box-shadow') }
 
@@ -20,7 +20,7 @@ const addTimedOutShadow = function () {
   shadowTimeout = setTimeout(() => removeShadow(), 150)
 }
 
-const removeShadow = function () {
+const removeShadow = () => {
   header.classList.remove('box-shadow')
   navHeader.classList.remove('box-shadow')
 }
