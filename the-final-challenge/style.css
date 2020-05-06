@@ -4,6 +4,7 @@
 
 :root {
   --clr-ash:   #6F737F;
+  --clr-smoke: #888C99;
   --clr-cloud: #E0E0E2;
   --clr-dusk:  #3B4050;
   --clr-gold:  #A59678;
@@ -47,7 +48,8 @@ h2,
 h3 { font-family: var(--fnt-heading); }
 
 .h2-article,
-.h2-top-point { color: var(--clr-gold); }
+.h2-top-point,
+.h3-footer { color: var(--clr-gold); }
 
 .h3-aside,
 .h2-top-point {
@@ -69,7 +71,10 @@ h1 {
 
 .h2-article { font-size: 2.25rem; }
 
-.h2-footer { font-size: 2.75rem; }
+.h2-footer {
+  color: white;
+  font-size: 2.75rem;
+}
 
 .h3-footer { font-size: 1.3125rem; }
 
@@ -157,6 +162,11 @@ h1 {
   margin: 1em 0;
   text-transform: uppercase;
 }
+
+.a-footer { color: var(--clr-smoke); }
+
+.a-footer:focus,
+.a-footer:hover { color: var(--clr-cloud); }
 
 .btn-close-nav {
   align-self: flex-end;
@@ -268,9 +278,14 @@ footer,
 
 /* ------ */
 
-aside { margin: 2em 0; }
+aside {
+  color: var(--clr-cloud);
+  margin: 2em 0;
+}
 
 footer {
+  background: var(--clr-dusk);
+  color: var(--clr-smoke);
   font-size: .95rem;
   text-align: center;
 }
@@ -285,7 +300,6 @@ main { margin-top: 5em; }
 
 .col-aside {
   background: var(--clr-dusk);
-  color: var(--clr-haze);
   padding: 1.3em;
 }
 
