@@ -54,6 +54,8 @@ h3 { font-family: var(--fnt-heading); }
 .p-aside,
 .p-top-point { font-size: 1.125rem; }
 
+/* ---------- */
+
 h1 {
   font-size: 4.625rem;
   letter-spacing: -2px;
@@ -128,7 +130,7 @@ h1 {
 
 .btn-close-nav { margin-right: 2.5vw; }
 
-/* ---------------------------------- */
+/* -------------------- */
 
 header {
   background: var(--clr-night);
@@ -173,11 +175,11 @@ nav {
 
 .show-nav { display: flex; }
 
-/* ----------------------- */
+/* -------------------- */
 
 .img-logo { margin: 1.1em 0; }
 
-/* ----------------------- */
+/* -------------------- */
 
 @media (min-width: 700px) {
 
@@ -191,6 +193,8 @@ nav {
     font-size: 1.125rem;
     margin: 0 0 0 2.5em;
   }
+
+  /* -------------------- */
 
   nav {
     display: unset;
@@ -230,6 +234,8 @@ footer,
   text-align: center;
 }
 
+/* ------ */
+
 aside { margin: 2em 0; }
 
 footer {
@@ -239,18 +245,13 @@ footer {
 
 main { margin-top: 5em; }
 
-.col-aside { padding: 1.3em; }
-
-.container {
-  margin: 0 auto;
-  width: 95vw;
-}
-
 .columns-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.col-aside { padding: 1.3em; }
 
 .col-footer {
   display: flex;
@@ -261,6 +262,11 @@ main { margin-top: 5em; }
 .col-footer:first-child {
   flex-basis: 100%;
   margin-bottom: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95vw;
 }
 
 
@@ -281,7 +287,7 @@ main { margin-top: 5em; }
 
   .p-aside { font-size: 1rem; }
 
-  /* ----------------------- */
+  /* ------------- */
 
   aside {
     display: flex;
@@ -292,7 +298,7 @@ main { margin-top: 5em; }
 
   .col-aside { flex-basis: 31.5%; }
 
-  /* --------------------------- */
+  /* ------------- */
 
   .img-article {
     height: 300px;
@@ -317,7 +323,7 @@ main { margin-top: 5em; }
 
   .p-footer { margin: unset; }
 
-  /* ----------------------- */
+  /* ------------- */
 
   main,
   footer { font-size: 1rem; }
@@ -337,6 +343,8 @@ main { margin-top: 5em; }
 
   .col-aside +
   .col-aside { margin-top: 1.3em; }
+
+  /* ------------- */
 
   aside {
     flex-basis: 31%;
@@ -363,7 +371,7 @@ main { margin-top: 5em; }
 
   .container { max-width: 1200px; }
 
-  /* ---------------------------- */
+  /* ------------- */
 
   .img-article { height: unset; }
 
