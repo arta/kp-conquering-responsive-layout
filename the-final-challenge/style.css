@@ -323,6 +323,8 @@ main { margin-top: 5em; }
   .col-aside +
   .col-aside { margin-top: 1.3em; }
 
+  .columns-footer { justify-content: space-between; }
+
   .container { max-width: 1200px; }
 
   aside {
@@ -337,7 +339,7 @@ main { margin-top: 5em; }
   .col-footer { flex-basis: 12%; }
 
   .col-footer:first-child {
-    flex-basis: 35%;
+    flex-basis: 38%;
     margin-bottom: unset;
     text-align: left;
   }
