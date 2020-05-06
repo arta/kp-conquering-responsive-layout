@@ -211,8 +211,8 @@ nav {
 /* LAYOUT */
 /* ------ */
 
-article,
 footer,
+.section-main-article,
 .section-main-hero,
 .section-main-top-points {
   padding: 4em 0;
@@ -314,7 +314,7 @@ main { margin-top: 5em; }
     justify-content: space-between;
   }
 
-  .article-col,
+  article,
   .hero-col { flex-basis: 63%; }
 
   .aside-col,
