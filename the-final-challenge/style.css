@@ -187,6 +187,9 @@ header {
   width: 100vw;
 }
 
+header:hover,
+nav:hover { box-shadow: 2px 2px 8px #1d1d1d; }
+
 nav {
   background: var(--clr-night);
   display: none;
@@ -209,6 +212,8 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+.drop-shadow { box-shadow: 2px 2px 8px #1d1d1d; }
 
 .items-nav-header {
   align-self: flex-start;
@@ -246,6 +251,8 @@ nav {
     position: unset;
     width: unset;
   }
+
+  nav:hover { box-shadow: unset; }
 
   .col-user {
     flex-direction: unset;
