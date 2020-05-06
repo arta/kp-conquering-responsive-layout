@@ -13,17 +13,11 @@ const navHeader   = get('nav-header')
 let shadowTimeout
 
 const dropShadow = function () {
-
   header.classList.add('box-shadow')
-
-  if (innerWidth <= 700) {
-    navHeader.classList.add('box-shadow')
-  }
+  if (innerWidth <= 700) { navHeader.classList.add('box-shadow') }
 
   clearTimeout(shadowTimeout)
-
   shadowTimeout = setTimeout(() => removeShadow(), 150)
-
 }
 
 const removeShadow = function () {
@@ -31,9 +25,7 @@ const removeShadow = function () {
   navHeader.classList.remove('box-shadow')
 }
 
-const toggleNav = function () {
-  navHeader.classList.toggle('display-nav')
-}
+const toggleNav = () => navHeader.classList.toggle('display-nav')
 
 // Apparently & interestingly:
 //  if no recepient is provided for a method call
