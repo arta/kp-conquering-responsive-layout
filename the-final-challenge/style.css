@@ -16,7 +16,7 @@
 *,
 *::after,
 *::before {
-  /* border: 1px dotted hotpink; */
+  border: 1px dotted hotpink;
   box-sizing: border-box;
 }
 
@@ -164,7 +164,7 @@ nav {
 
 .show-nav { display: flex; }
 
-.user-col {
+.col-user {
   display: flex;
   flex-direction: column;
   margin-top: 2em;
@@ -199,7 +199,7 @@ nav {
     margin: unset;
   }
 
-  .user-col {
+  .col-user {
     flex-direction: unset;
     margin: 0 0 0 2.5em;
   }
@@ -218,8 +218,8 @@ footer,
   padding: 4em 0;
 }
 
-.aside-col,
-.top-point-col {
+.col-aside,
+.col-top-point {
   margin: 2em 0;
   text-align: center;
 }
@@ -233,26 +233,26 @@ footer {
 
 main { margin-top: 5em; }
 
-.aside-col { padding: 1.3em; }
+.col-aside { padding: 1.3em; }
 
 .container {
   margin: 0 auto;
   width: 95vw;
 }
 
-.footer-columns {
+.columns-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.footer-col {
+.col-footer {
   display: flex;
   flex-basis: 30%;
   flex-direction: column;
 }
 
-.footer-col:first-child {
+.col-footer:first-child {
   flex-basis: 100%;
   margin-bottom: 1em;
 }
@@ -280,9 +280,9 @@ main { margin-top: 5em; }
     justify-content: space-between;
   }
 
-  .aside-col { flex-basis: 31.5%; }
+  .col-aside { flex-basis: 31.5%; }
 
-  .footer-columns { justify-content: space-evenly; }
+  .columns-footer { justify-content: space-evenly; }
 
   .article-img {
     height: 300px;
@@ -315,13 +315,13 @@ main { margin-top: 5em; }
   }
 
   article,
-  .hero-col { flex-basis: 63%; }
+  .col-hero { flex-basis: 63%; }
 
-  .aside-col,
-  .top-point-col { margin: unset; }
+  .col-aside,
+  .col-top-point { margin: unset; }
 
-  .aside-col +
-  .aside-col { margin-top: 1.3em; }
+  .col-aside +
+  .col-aside { margin-top: 1.3em; }
 
   .container { max-width: 1200px; }
 
@@ -334,17 +334,17 @@ main { margin-top: 5em; }
 
   footer { text-align: left; }
 
-  .footer-col { flex-basis: 12%; }
+  .col-footer { flex-basis: 12%; }
 
-  .footer-col:first-child {
+  .col-footer:first-child {
     flex-basis: 35%;
     margin-bottom: unset;
     text-align: left;
   }
 
-  .hero-col { margin-top: auto; }
+  .col-hero { margin-top: auto; }
 
-  .top-point-col {
+  .col-top-point {
     flex-basis: 30%;
   }
 
