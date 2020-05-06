@@ -57,6 +57,7 @@ h3 { font-family: var(--fnt-heading); }
 /* ---------- */
 
 h1 {
+  color: white;
   font-size: 4.625rem;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -76,6 +77,8 @@ h1 {
 }
 
 .p-hero { font-size: 1.5rem; }
+
+.span-h1-hero { color: var(--clr-gold); }
 
 /* ---------- */
 
@@ -101,7 +104,7 @@ h1 {
 .a-cta-hero:focus,
 .a-cta-hero:hover {
   color: white;
-  box-shadow: 2px 2px 8px gray;
+  box-shadow: 2px 2px 8px #1d1d1d;
 }
 
 .a-footer { margin-bottom: 1em; }
@@ -294,6 +297,10 @@ main { margin-top: 5em; }
   width: 95vw;
 }
 
+.section-main-hero {
+  background: var(--clr-dusk);
+  color: var(--clr-cloud);
+}
 
 /* ###### */
 /* IMAGES */
