@@ -46,6 +46,9 @@ h1,
 h2,
 h3 { font-family: var(--fnt-heading); }
 
+.h2-article,
+.h2-top-point { color: var(--clr-gold); }
+
 .h3-aside,
 .h2-top-point {
   font-size: 1.875rem;
@@ -67,8 +70,6 @@ h1 {
 .h2-article { font-size: 2.25rem; }
 
 .h2-footer { font-size: 2.75rem; }
-
-.h2-top-point { color: var(--clr-gold); }
 
 .h3-footer { font-size: 1.3125rem; }
 
@@ -282,7 +283,11 @@ main { margin-top: 5em; }
   justify-content: space-between;
 }
 
-.col-aside { padding: 1.3em; }
+.col-aside {
+  background: var(--clr-dusk);
+  color: var(--clr-haze);
+  padding: 1.3em;
+}
 
 .col-footer {
   display: flex;
@@ -386,6 +391,7 @@ main { margin-top: 5em; }
   aside {
     flex-basis: 31%;
     flex-direction: column;
+    justify-content: unset;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -393,6 +399,8 @@ main { margin-top: 5em; }
   footer { text-align: left; }
 
   .columns-footer { justify-content: space-between; }
+
+  .col-aside { flex-basis: unset; }
 
   .col-footer { flex-basis: 12%; }
 
