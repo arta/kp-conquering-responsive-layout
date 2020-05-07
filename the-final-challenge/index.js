@@ -10,12 +10,12 @@ const btnCloseNav = get('btn-close-nav')
 const header      = get('header')
 const nav         = get('nav-header')
 
-let expireHeaderNavShadow
+let timeoutHeaderNavShadow
 
-const addExpiringHeaderNavShadow = () => {
-  clearTimeout(expireHeaderNavShadow)
+const addTimedoutHeaderNavShadow = () => {
+  clearTimeout(timeoutHeaderNavShadow)
   addHeaderNavShadow()
-  expireHeaderNavShadow = setTimeout(() => removeHeaderNavShadow(), 150)
+  timeoutHeaderNavShadow = setTimeout(() => removeHeaderNavShadow(), 150)
 }
 
 const addHeaderNavShadow = () => {
@@ -33,7 +33,7 @@ const toggleNav = () => nav.classList.toggle('display-nav')
 // Apparently & interestingly:
 //  if no recepient is provided for a method call
 //  then `window` would be the default recipient:
-window.addEventListener('scroll', () => addExpiringHeaderNavShadow())
+window.addEventListener('scroll', () => addTimedoutHeaderNavShadow())
 
 btnOpenNav.addEventListener('click', () => toggleNav())
 btnCloseNav.addEventListener('click', () => toggleNav())
